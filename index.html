@@ -33,6 +33,14 @@
         opacity: 0; /* Start hidden for animation */
         animation: fadeInUp 0.5s ease-out forwards;
       }
+      /* Accessibility & Fallback: Ensure content is visible if user prefers reduced motion or if animations fail */
+      @media (prefers-reduced-motion: reduce) {
+        .animate-fadeInUp {
+          animation: none;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
     </style>
   <script type="importmap">
 {
@@ -57,6 +65,6 @@
 </head>
   <body class="bg-gray-50 dark:bg-slate-900">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

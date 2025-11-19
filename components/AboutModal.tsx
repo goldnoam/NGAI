@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrainCircuitIcon } from './icons';
 
 interface AboutModalProps {
@@ -12,12 +12,25 @@ interface AboutModalProps {
 }
 
 const AboutModal: React.FC<AboutModalProps> = ({ onClose, translations }) => {
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [onClose]);
+
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4"
       onClick={onClose}
       aria-modal="true"
       role="dialog"
+      aria-labelledby="modal-title"
     >
       <div
         className="bg-white dark:bg-slate-800 rounded-lg shadow-xl p-6 sm:p-8 max-w-sm w-full text-center"

@@ -1,10 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import type { Theme, Language } from './types';
 import { TRANSLATIONS, APPS_DATA } from './constants';
 import Header from './components/Header';
 import AppCard from './components/AppCard';
 import AboutModal from './components/AboutModal';
+import { EnvelopeIcon } from './components/icons';
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState<Theme>('dark');
@@ -60,7 +60,16 @@ const App: React.FC = () => {
       )}
       
       <footer className="text-center py-8 mt-12 border-t border-slate-200 dark:border-slate-800">
+        <div className="flex flex-col items-center justify-center gap-4">
           <p className="text-slate-500 dark:text-slate-400">{t.footer.text}</p>
+          <a 
+            href="mailto:gold.noam@gmail.com"
+            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors text-sm font-medium"
+          >
+            <EnvelopeIcon className="h-5 w-5" />
+            <span>{t.footer.feedback}</span>
+          </a>
+        </div>
       </footer>
     </div>
   );

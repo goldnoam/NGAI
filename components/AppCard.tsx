@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { AppData, Language } from '../types';
 import { ArrowTopRightOnSquareIcon } from './icons';
@@ -13,14 +14,14 @@ const AppCard: React.FC<AppCardProps> = ({ app, language, openSiteText }) => {
 
   return (
     <div
-      className="bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-1 transition-all duration-300 hover:shadow-xl dark:shadow-slate-950/50 animate-fadeInUp"
+      className="bg-white dark:bg-slate-800 rounded-xl shadow-md overflow-hidden transform hover:-translate-y-1 transition-all duration-300 hover:shadow-xl dark:shadow-slate-950/50 animate-fadeInUp group"
       style={{ animationDelay: `${(app.id - 1) * 75}ms` }}
     >
       <div className="p-8">
         <div className="flex items-center space-x-4 rtl:space-x-reverse mb-6">
           <div className="flex-shrink-0">
             <div className="p-3 bg-primary-100 dark:bg-primary-900/50 rounded-lg">
-              <IconComponent className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+              <IconComponent className="h-8 w-8 text-primary-600 dark:text-primary-400 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
             </div>
           </div>
           <div>
@@ -39,6 +40,7 @@ const AppCard: React.FC<AppCardProps> = ({ app, language, openSiteText }) => {
             href={app.link}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`${openSiteText} - ${app.name[language]}`}
             className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-slate-800 transition-colors"
           >
             {openSiteText}

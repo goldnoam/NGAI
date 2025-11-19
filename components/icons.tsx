@@ -79,3 +79,15 @@ export const UserGroupIcon: React.FC<IconProps> = (props) => (
         <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m-7.282-2.72a3 3 0 0 0-4.682 2.72 9.094 9.094 0 0 0 3.741.479m-1.023-2.924a3 3 0 1 1 4.682-2.72 3 3 0 0 1-4.682 2.72ZM18 18.72a9.094 9.094 0 0 0-3.741-.479m-4.523 0a9.094 9.094 0 0 0-3.741.479M12 15.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
     </svg>
 );
+
+export const PuzzlePieceIcon: React.FC<IconProps> = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186-.612.29-1.25.29-1.902 0-2.605-2.365-4.717-5.25-4.717S.75 2.113.75 4.717c0 .652.104 1.29.29 1.902C.43 7.164.03 7.769.03 8.433c0 1.645 1.863 3.005 4.28 3.18.465.034.92.052 1.366.052.446 0 .901-.018 1.366-.052 2.417-.175 4.28-1.535 4.28-3.18 0-.664-.4-1.269-1.01-1.814Z" />
+  </svg>
+);
+
+export const EnvelopeIcon: React.FC<IconProps> = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+  </svg>
+);

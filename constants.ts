@@ -8,6 +8,7 @@ import {
   PaintBrushIcon,
   ChatBubbleLeftRightIcon,
   UserGroupIcon,
+  PuzzlePieceIcon,
 } from './components/icons';
 
 export const APPS_DATA: AppData[] = [
@@ -60,6 +61,13 @@ export const APPS_DATA: AppData[] = [
     link: 'https://live-counting-people.vercel.app/',
     icon: UserGroupIcon,
   },
+  {
+    id: 8,
+    name: { en: 'Noam Gold AI Games', he: 'משחקי נועם גולד AI' },
+    description: { en: 'Play fun and interactive AI-powered games.', he: 'שחקו במשחקים מהנים ואינטראקטיביים מבוססי בינה מלאכותית.' },
+    link: 'https://noam-gold-games.vercel.app/',
+    icon: PuzzlePieceIcon,
+  },
 ];
 
 
@@ -86,7 +94,8 @@ export const TRANSLATIONS = {
       close: 'Close',
     },
     footer: {
-        text: '© 2025 Noam Gold AI. All rights reserved.'
+        text: '© 2025 Noam Gold AI. All rights reserved.',
+        feedback: 'Send Feedback'
     }
   },
   he: {
@@ -111,7 +120,8 @@ export const TRANSLATIONS = {
       close: 'סגור',
     },
     footer: {
-        text: '© 2025 נועם גולד AI. כל הזכויות שמורות.'
+        text: '© 2025 נועם גולד AI. כל הזכויות שמורות.',
+        feedback: 'שלח משוב'
     }
   },
 };
