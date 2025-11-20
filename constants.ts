@@ -68,6 +68,20 @@ export const APPS_DATA: AppData[] = [
     link: 'https://noam-gold-games.vercel.app/',
     icon: PuzzlePieceIcon,
   },
+  {
+    id: 9,
+    name: { en: 'Dr. Icon', he: 'ד"ר אייקון' },
+    description: { en: 'Generate stunning app icons and favicons instantly with AI technology.', he: 'צור סמלי אפליקציה וסמלי מועדפים מרהיבים באופן מיידי בעזרת טכנולוגיית AI.' },
+    link: 'https://dr-icon.vercel.app/',
+    icon: SparklesIcon,
+  },
+  {
+    id: 10,
+    name: { en: 'Global Trends AI', he: 'מגמות עולמיות AI' },
+    description: { en: 'Stay ahead of the curve by tracking global market trends with real-time AI analysis.', he: 'הישאר לפני העקומה על ידי מעקב אחר מגמות שוק גלובליות עם ניתוח AI בזמן אמת.' },
+    link: 'https://global-trends-ai-demo.vercel.app/',
+    icon: ChartBarIcon,
+  },
 ];
 
 
