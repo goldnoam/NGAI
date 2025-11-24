@@ -82,6 +82,13 @@ export const APPS_DATA: AppData[] = [
     link: 'https://global-trends-ai-demo.vercel.app/',
     icon: ChartBarIcon,
   },
+  {
+    id: 11,
+    name: { en: 'Dr. Job', he: 'ד"ר ג\'וב' },
+    description: { en: 'Prepare for job interviews with an intelligent AI career coach.', he: 'התכונן לראיונות עבודה עם מאמן קריירה חכם מבוסס בינה מלאכותית.' },
+    link: 'https://drjob.vercel.app/',
+    icon: ChatBubbleLeftRightIcon,
+  },
 ];
 
 
