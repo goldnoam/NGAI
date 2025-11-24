@@ -1,7 +1,7 @@
 
 import React from 'react';
 import type { Theme, Language } from '../types';
-import { SunIcon, MoonIcon, LanguageIcon, BrainCircuitIcon } from './icons';
+import { SunIcon, MoonIcon, LanguageIcon, BrainCircuitIcon, EnvelopeIcon } from './icons';
 
 interface HeaderProps {
   theme: Theme;
@@ -12,6 +12,7 @@ interface HeaderProps {
   translations: {
     title: string;
     about: string;
+    feedback: string;
     language: string;
     theme: string;
   };
@@ -47,6 +48,14 @@ const Header: React.FC<HeaderProps> = ({
           </div>
 
           <div className="flex items-center space-x-2 sm:space-x-4">
+            <a
+              href="mailto:gold.noam@gmail.com"
+              className="hidden sm:inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+            >
+              <EnvelopeIcon className="h-4 w-4" />
+              {translations.feedback}
+            </a>
+
             <button
               onClick={onAboutClick}
               className="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"

@@ -105,6 +105,7 @@ export const TRANSLATIONS = {
     header: {
       title: 'NGAI',
       about: 'About',
+      feedback: 'Send Feedback',
       language: 'Language',
       theme: 'Theme',
       light: 'Light',
@@ -131,6 +132,7 @@ export const TRANSLATIONS = {
     header: {
       title: 'NGAI',
       about: 'אודות',
+      feedback: 'שלח משוב',
       language: 'שפה',
       theme: 'ערכת נושא',
       light: 'בהיר',
