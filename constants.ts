@@ -9,6 +9,7 @@ import {
   ChatBubbleLeftRightIcon,
   UserGroupIcon,
   PuzzlePieceIcon,
+  ClipboardDocumentListIcon,
 } from './components/icons';
 
 export const APPS_DATA: AppData[] = [
@@ -88,6 +89,13 @@ export const APPS_DATA: AppData[] = [
     description: { en: 'Prepare for job interviews with an intelligent AI career coach.', he: 'התכונן לראיונות עבודה עם מאמן קריירה חכם מבוסס בינה מלאכותית.' },
     link: 'https://drjob.vercel.app/',
     icon: ChatBubbleLeftRightIcon,
+  },
+  {
+    id: 12,
+    name: { en: 'To Do List', he: 'רשימת מטלות' },
+    description: { en: 'Stay organized and manage your daily tasks efficiently with this intuitive to-do list.', he: 'הישאר מאורגן ונהל את המשימות היומיות שלך ביעילות עם רשימת מטלות אינטואיטיבית זו.' },
+    link: 'https://2do2.vercel.app/',
+    icon: ClipboardDocumentListIcon,
   },
 ];
 
