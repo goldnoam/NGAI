@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import type { Theme, Language } from './types';
 import { TRANSLATIONS, APPS_DATA } from './constants';
@@ -63,7 +64,7 @@ const App: React.FC = () => {
         <div className="flex flex-col items-center justify-center gap-4">
           <p className="text-slate-500 dark:text-slate-400">{t.footer.text}</p>
           <a 
-            href="mailto:gold.noam@gmail.com"
+            href="mailto:goldnoamai@gmail.com"
             className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors text-sm font-medium"
           >
             <EnvelopeIcon className="h-5 w-5" />

@@ -17,7 +17,7 @@ export const APPS_DATA: AppData[] = [
     id: 1,
     name: { en: 'SEO Expert', he: 'מומחה SEO' },
     description: { en: 'Boost your website\'s ranking with AI-driven SEO analysis and keyword suggestions.', he: 'שפר את דירוג האתר שלך עם ניתוח SEO מבוסס בינה מלאכותית והצעות למילות מפתח.' },
-    link: 'https://seo-expert-mocha.vercel.app/',
+    link: 'https://seo12.vercel.app/',
     icon: ChartBarIcon,
   },
   {
@@ -51,7 +51,7 @@ export const APPS_DATA: AppData[] = [
   {
     id: 6,
     name: { en: 'My Future AI', he: 'העתיד שלי AI' },
-    description: { en: 'Chat with an advanced AI to explore possibilities and get insights about your future.', he: 'שוחח עם בינה מלאכותית מתקדמת כדי לחקור אפשרויות ולקבל תובנות על עתידך.' },
+    description: { en: 'Chat with an advanced AI to explore possibilities and get insights about your future.', he: 'שוחח עם בינה מלאכותית מתקדמת כדי חקור אפשרויות ולקבל תובנות על עתידך.' },
     link: 'https://my-future-ai.vercel.app/',
     icon: ChatBubbleLeftRightIcon,
   },
